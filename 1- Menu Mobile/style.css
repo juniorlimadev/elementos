@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+#botao_menu{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+.linha{
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 6px auto;
+    background-color: white;
+    position: relative;
+    transform-origin: center;
+    transition: 0.2s;
+}
+button.ativar .linha:nth-child(1){
+    transform: translateY(8px) rotate(-45deg);
+    background-color: red;
+}
+button.ativar .linha:nth-child(2){
+    width: 0;
+}
+button.ativar .linha:nth-child(3){
+    transform: translateY(-8px) rotate(45deg);
+    background-color: red;
+}
